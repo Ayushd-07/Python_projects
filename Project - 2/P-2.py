@@ -12,11 +12,12 @@ while True:
     match choice:
         # Pattern generate
         case 1:
+            n = int(input("\nenter the number of rows : "))
             print("\n1. Right side triangle")
             print("2. Left side triangle")
-
+            
             a = int(input("\nEnter triangle shape : "))
-            n = int(input("\nenter the number of rows : "))
+            
             match a:
                 # Right side
                 case 1:
@@ -37,8 +38,6 @@ while True:
                 # Invalid
                 case _:
                     print("\n❌ Invalid choice! Please try again.")
-                    break
-
 
         # Number analsis
         case 2:
@@ -67,5 +66,3 @@ while True:
         # Invalid
         case _:
             print("\n❌ Invalid choice! Please try again.")
-
-            

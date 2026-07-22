@@ -1,69 +1,476 @@
 # 🧰 Multi-Utility Toolkit
 
-A menu-driven Python CLI project that combines multiple useful tools in one application, including datetime utilities, mathematical calculations, random data generation, UUID generation, file operations, and module exploration.
+<div align="center">
 
-## ✨ Features
+### A Powerful Menu-Driven Python Utility Application
 
-### 🕒 Datetime & Time Operations
-- Display current date and time
-- Calculate the difference between two dates
-- Format dates into `DD/MM/YYYY`
-- Stopwatch
-- Countdown timer
+A beginner-friendly Python project that combines multiple useful operations such as **Date & Time Operations, Mathematical Calculations, Random Data Generation, UUID Generation, File Handling, and Module Exploration** into one command-line application.
 
-### 🧮 Mathematical Operations
-- Calculate factorial
-- Calculate compound amount
-- Trigonometric calculations: Sin, Cos, and Tan
-- Calculate area of a circle, rectangle, and square
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)
+![Project](https://img.shields.io/badge/Project-Multi--Utility%20Toolkit-success)
+![Type](https://img.shields.io/badge/Type-CLI%20Application-orange)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Level](https://img.shields.io/badge/Level-Beginner%20Friendly-purple)
 
-### 🎲 Random Data Generation
-- Generate a random number
-- Generate a random list
-- Create a random password
-- Generate a 6-digit OTP
+</div>
 
-### 🆔 UUID Generator
-- Generate unique identifiers using Python's `uuid` module
+---
 
-### 📁 File Operations
-File operations are handled through a separate custom module:
-- Create a file
-- Write to a file
-- Read from a file
-- Append data to a file
+## 📖 About the Project
 
-### 🔍 Module Attribute Explorer
-Explore module attributes using Python's built-in `dir()` function for `math`, `datetime`, `random`, `uuid`, and the custom file operations module.
+The **Multi-Utility Toolkit** is a menu-driven command-line application developed using Python.
 
-## 🛠️ Technologies & Concepts
+The main purpose of this project is to combine different Python concepts and built-in modules into a single application. Instead of creating separate programs for every operation, this toolkit provides a centralized menu where users can select the utility they want to use.
 
-- Python 3
-- Standard library modules
-- Custom modules and packages
-- File handling
-- Exception handling
-- Functions
-- Loops and nested menus
-- Conditional statements
-- `match-case`
-- `datetime`, `time`, `math`, `random`, and `uuid`
-- `dir()` function
+The application includes multiple categories such as:
 
-## 📂 Project Structure
+- 🕒 Datetime and Time Operations
+- 🧮 Mathematical Operations
+- 🎲 Random Data Generation
+- 🆔 UUID Generation
+- 📁 File Operations
+- 🔍 Module Attribute Exploration
+
+This project is useful for understanding how different Python modules, functions, loops, conditions, custom modules, and file operations can work together in a complete application.
+
+---
+
+# ✨ Features
+
+## 🕒 1. Datetime and Time Operations
+
+The Datetime section provides multiple utilities related to dates and time.
+
+### Available Operations
+
+#### 📅 Display Current Date & Time
+
+Displays the current system date and time using Python's `datetime` module.
+
+Example:
 
 ```text
-Multi-Utility-Toolkit/
-│
-├── main.py
-├── data.txt
-│
-└── utilities/
-    ├── __init__.py
-    └── file_operations.py
+Current Date & Time : 2026-07-22 15:34:54.089667
 ```
 
-## 📋 Main Menu
+---
+
+#### 📆 Calculate Difference Between Two Dates
+
+The user can enter two dates in the following format:
+
+```text
+YYYY-MM-DD
+```
+
+The program calculates the difference between the two dates in days.
+
+Example:
+
+```text
+Enter the first date (YYYY-MM-DD) : 2026-07-01
+Enter the second date (YYYY-MM-DD) : 2026-07-22
+
+Difference : 21
+```
+
+---
+
+#### 🗓️ Format a Date
+
+The program converts a date from:
+
+```text
+YYYY-MM-DD
+```
+
+into:
+
+```text
+DD/MM/YYYY
+```
+
+Example:
+
+```text
+Enter the date (YYYY-MM-DD) : 2026-07-22
+
+Formatted date : 22/07/2026
+```
+
+---
+
+#### ⏱️ Stopwatch
+
+The stopwatch allows the user to:
+
+1. Press Enter to start
+2. Wait for any amount of time
+3. Press Enter again to stop
+
+The program then calculates the total elapsed time.
+
+Example:
+
+```text
+Press Enter to start stopwatch:
+
+Stopwatch running... Press Enter to stop:
+
+Total time : 5.42 seconds
+```
+
+---
+
+#### ⏳ Countdown Timer
+
+The user enters the number of seconds, and the program starts counting down until it reaches zero.
+
+Example:
+
+```text
+Enter second : 5
+
+5
+4
+3
+2
+1
+
+Time's up!
+```
+
+---
+
+# 🧮 2. Mathematical Operations
+
+The Mathematical Operations section provides multiple useful calculations using Python's built-in `math` module.
+
+## Available Operations
+
+### 🔢 Calculate Factorial
+
+The program calculates the factorial of a given number.
+
+Example:
+
+```text
+Enter a number : 6
+
+Factorial of 6 is 720
+```
+
+---
+
+### 💰 Compound Interest Calculation
+
+The user enters:
+
+- Principal amount
+- Rate of interest
+- Time in years
+
+The application then calculates the compounded amount.
+
+Example:
+
+```text
+Enter principal amount : 5000
+Enter rate of interest (%) : 7
+Enter time (in year) : 3
+
+Compound Interest : 6125.22
+```
+
+---
+
+### 📐 Trigonometric Calculations
+
+The application supports three trigonometric calculations:
+
+```text
+1. Sin
+2. Cos
+3. Tan
+```
+
+The user enters an angle in degrees, and the program converts it into radians before performing the selected calculation.
+
+Example:
+
+```text
+Enter angle in degrees: 45
+
+1. Sin
+2. Cos
+3. Tan
+
+Enter your choice: 1
+
+Sin = 0.7071067811865475
+```
+
+---
+
+### 📏 Area of Geometric Shapes
+
+The program can calculate the area of different geometric shapes.
+
+Supported shapes:
+
+```text
+1. Circle
+2. Rectangle
+3. Square
+```
+
+#### Circle
+
+```text
+Area = 3.14 × radius × radius
+```
+
+#### Rectangle
+
+```text
+Area = length × width
+```
+
+#### Square
+
+```text
+Area = side × side
+```
+
+---
+
+# 🎲 3. Random Data Generation
+
+The Random Data Generation section uses Python's built-in `random` module.
+
+It provides several useful random data generation utilities.
+
+## Available Operations
+
+### 🎯 Generate Random Number
+
+The user enters a starting and ending number.
+
+The program generates a random number within that range.
+
+Example:
+
+```text
+Enter starting number: 1
+Enter ending number: 10
+
+Random Number : 8
+```
+
+---
+
+### 📋 Generate Random List
+
+The program generates a list containing random numbers.
+
+Example output:
+
+```text
+Random List = [42, 17, 83, 5, 61]
+```
+
+---
+
+### 🔐 Create Random Password
+
+The user enters the required password length.
+
+The application generates a password containing:
+
+- Uppercase letters
+- Lowercase letters
+- Numbers
+
+Example:
+
+```text
+Enter password length : 7
+
+Password : 1Imtgm8
+```
+
+> **Note:** This password generator is created for learning purposes. For security-sensitive applications, Python's `secrets` module is generally preferred.
+
+---
+
+### 🔢 Generate Random OTP
+
+The program generates a random 6-digit OTP.
+
+Example:
+
+```text
+OTP = 379693
+```
+
+---
+
+# 🆔 4. UUID Generator
+
+The application can generate a Universally Unique Identifier using Python's built-in `uuid` module.
+
+The program uses:
+
+```python
+uuid.uuid4()
+```
+
+Example output:
+
+```text
+Generate Unique Identifiers :
+
+UUID : cd62eea3-2340-4120-9e53-57719bbb1354
+```
+
+Every generated UUID is designed to be unique.
+
+---
+
+# 📁 5. File Operations
+
+The project includes a separate custom module for performing file operations.
+
+The file operation functionality is organized inside:
+
+```text
+utilities/file_operations.py
+```
+
+This helps demonstrate how custom Python modules can be created and imported into another Python file.
+
+## Available File Operations
+
+### 📄 Create a New File
+
+Creates a new file using the filename entered by the user.
+
+Example:
+
+```text
+Enter file name : data.txt
+
+✅ File created successfully!
+```
+
+---
+
+### ✍️ Write Data to a File
+
+The user enters:
+
+1. File name
+2. Data to write
+
+The program writes the provided data into the file.
+
+Example:
+
+```text
+Enter file name : data.txt
+
+Enter data to write : Hello! Python World
+
+✅ Data written successfully!
+```
+
+---
+
+### 📖 Read Data From a File
+
+The application opens and displays the content of a selected file.
+
+Example:
+
+```text
+Enter file name : data.txt
+
+File content :
+
+Hello! Python World
+
+✅ File read successfully!
+```
+
+If the file does not exist, the application handles the error using:
+
+```python
+except FileNotFoundError:
+```
+
+Example:
+
+```text
+❌ File not found
+```
+
+---
+
+### ➕ Append Data to a File
+
+The append operation adds new content to an existing file without deleting the previous content.
+
+The file is opened using:
+
+```python
+open(file_name, "a")
+```
+
+---
+
+# 🔍 6. Explore Module Attributes
+
+One of the interesting features of this project is the **Module Attribute Explorer**.
+
+It uses Python's built-in:
+
+```python
+dir()
+```
+
+function.
+
+The user can explore the available attributes, classes, functions, and methods of different modules.
+
+## Supported Modules
+
+```text
+math
+datetime
+random
+uuid
+file_op
+```
+
+Example:
+
+```text
+Available Modules:
+
+math | datetime | random | uuid | file_op
+
+Enter module name : random
+```
+
+The program then displays all available attributes of the selected module.
+
+This feature is useful for learning and exploring Python modules.
+
+---
+
+# 📋 Main Menu
+
+When the application starts, the following main menu is displayed:
 
 ```text
 +------------------------------------------------+
@@ -79,70 +486,314 @@ Multi-Utility-Toolkit/
 +------------------------------------------------+
 ```
 
-## 🚀 How to Run
+The user enters a number from `1` to `7` to select an operation.
 
-Make sure Python is installed, keep the project files in the correct folder structure, and run:
+---
+
+# ❌ Invalid Choice Handling
+
+The application also handles invalid menu choices.
+
+For example:
+
+```text
+Enter your choice : 9
+
+❌ Invalid choice! Please choose from 1 to 7.
+```
+
+The program then displays the menu again instead of immediately terminating.
+
+---
+
+# 📂 Project Structure
+
+The recommended project structure is:
+
+```text
+Project-7/
+│
+├── main.py
+├── data.txt
+│
+└── utilities/
+    │
+    ├── __init__.py
+    └── file_operations.py
+```
+
+### File Description
+
+| File | Description |
+|------|-------------|
+| `main.py` | Main program containing all menus and utility operations |
+| `file_operations.py` | Custom module containing file handling functions |
+| `__init__.py` | Makes the `utilities` folder a Python package |
+| `data.txt` | Example text file used for file operations |
+
+---
+
+# 📦 Python Modules Used
+
+The project uses the following Python modules:
+
+```python
+import datetime as dt
+import time
+import math
+import random
+import uuid
+from utilities import file_operations as fo
+```
+
+## Module Purposes
+
+| Module | Purpose |
+|--------|---------|
+| `datetime` | Date and time operations |
+| `time` | Stopwatch and countdown timer |
+| `math` | Mathematical calculations |
+| `random` | Random numbers, passwords, lists, and OTPs |
+| `uuid` | Generate unique identifiers |
+| `file_operations` | Custom file handling operations |
+
+---
+
+# 🧠 Python Concepts Used
+
+This project demonstrates several important Python concepts.
+
+### Core Python
+
+- Variables
+- User input
+- Data types
+- Type conversion
+- Operators
+- Conditional statements
+- Nested conditions
+- Loops
+- Nested loops
+
+### Advanced Beginner Concepts
+
+- `match-case`
+- Functions
+- Built-in modules
+- Custom modules
+- Packages
+- Import statements
+- Exception handling
+- File handling
+- String operations
+- Lists
+- Random data generation
+- Date formatting
+- Module exploration
+
+---
+
+# ⚙️ Requirements
+
+Before running the project, make sure Python is installed on your computer.
+
+Recommended version:
+
+```text
+Python 3.10 or later
+```
+
+Python 3.10+ is recommended because the project uses the `match-case` statement.
+
+Check your Python version:
+
+```bash
+python --version
+```
+
+or:
+
+```bash
+python3 --version
+```
+
+No external Python packages are required because the project uses Python's standard library.
+
+---
+
+# 🚀 Installation & Setup
+
+## Step 1: Download the Project
+
+Download or clone the project files to your computer.
+
+---
+
+## Step 2: Open the Project Folder
+
+Open the project folder using:
+
+- Visual Studio Code
+- PyCharm
+- Any Python-supported code editor
+
+---
+
+## Step 3: Check the Folder Structure
+
+Make sure the custom module is inside the `utilities` folder.
+
+```text
+Project-7/
+├── main.py
+└── utilities/
+    ├── __init__.py
+    └── file_operations.py
+```
+
+---
+
+## Step 4: Open Terminal
+
+Open the terminal inside the project directory.
+
+---
+
+## Step 5: Run the Program
+
+Run:
 
 ```bash
 python main.py
 ```
 
-## 💻 Sample Operations
+If your system uses `python3`, run:
 
-### Calculate Factorial
-
-```text
-Enter a number : 6
-Factorial of 6 is 720
+```bash
+python3 main.py
 ```
 
-### Generate Random Number
+---
+
+# 🔄 Application Workflow
 
 ```text
-Enter starting number: 1
-Enter ending number: 10
-Random Number : 8
+Start Program
+      │
+      ▼
+Display Main Menu
+      │
+      ▼
+User Selects an Option
+      │
+      ├── 1 → Datetime Operations
+      │
+      ├── 2 → Mathematical Operations
+      │
+      ├── 3 → Random Data Generation
+      │
+      ├── 4 → Generate UUID
+      │
+      ├── 5 → File Operations
+      │
+      ├── 6 → Explore Module Attributes
+      │
+      └── 7 → Exit Program
 ```
 
-### Generate UUID
+Most sections contain their own submenus that allow users to perform multiple operations and return to the main menu.
 
-```text
-Generate Unique Identifiers :
-UUID : cd62eea3-2340-4120-9e53-57719bbb1354
-```
+---
 
-### File Operations
+# 🎯 Project Objectives
 
-```text
-1. Create a new file
-2. Write to a file
-3. Read from a file
-4. Append to a file
-5. Back to main menu
-```
+The main objectives of this project are:
 
-## 🎯 Learning Outcomes
+1. Practice Python's built-in modules
+2. Understand menu-driven program development
+3. Learn how to create custom Python modules
+4. Practice importing modules and functions
+5. Understand basic file handling
+6. Learn exception handling
+7. Practice loops and conditional statements
+8. Understand `match-case`
+9. Generate random data using Python
+10. Work with date and time values
+11. Explore Python modules using `dir()`
+12. Combine multiple concepts into one complete application
 
-This project is useful for practicing how multiple Python concepts can work together in one organized application. It demonstrates built-in modules, custom module imports, file handling, reusable functions, menu-driven programming, random data generation, and utility-based application development.
+---
 
-## 👨‍💻 Author
+# 📚 Learning Outcomes
 
-### **Ayush Donga**
+After completing this project, you can better understand:
 
-🎓 Student at P P Savani University  
-🐍 Python Developer | Learning AI & Automation  
+- How to structure a larger beginner-level Python project
+- How to organize different features using menus
+- How to use Python's standard library
+- How to create reusable functions
+- How to separate functionality into custom modules
+- How to work with files
+- How to handle missing files using exceptions
+- How to generate random values
+- How to generate UUIDs
+- How to work with dates and time
+- How to create interactive CLI applications
+
+---
+
+# 🔮 Future Improvements
+
+The project can be improved further by adding:
+
+- Better input validation using `try-except`
+- Calculator operations
+- Temperature converter
+- Currency converter
+- Unit converter
+- Age calculator
+- Strong password generator
+- Password strength checker
+- Multiple file format support
+- File deletion and renaming
+- JSON data storage
+- Logging system
+- Colored terminal output
+- User authentication
+- Graphical User Interface using Tkinter
+- Database integration using SQLite
+- Object-Oriented Programming structure
+
+---
+
+# 👨‍💻 Author
+
+## **Ayush Donga**
+
+🎓 Student at **P P Savani University**  
+🐍 Python Developer  
+🤖 Learning **AI, Machine Learning & Automation**  
+💻 Interested in Software Development and AI Projects  
 📍 Surat, Gujarat, India
 
 ### 🎥 Project Demo Video
 
-[▶️ **Watch Project Demo Video**](https://drive.google.com/file/d/1wOnYc54Oue9cmXYhEoJw0YjQniBEKrWg/view?usp=drive_link)
+▶️ [**Watch the Multi-Utility Toolkit Project Demo Video**](https://drive.google.com/file/d/1wOnYc54Oue9cmXYhEoJw0YjQniBEKrWg/view?usp=drive_link)
 
 ---
 
+# 🙏 Thank You
+
+Thank you for checking out the **Multi-Utility Toolkit** project!
+
+If you found this project useful for learning Python, feel free to explore the code, modify the features, and add your own utilities.
+
 <div align="center">
 
-⭐ **If you found this project useful, consider giving it a star!**
+### ⭐ If you like this project, consider giving the repository a star!
 
-Made with ❤️ using Python
+### 🐍 Keep Learning • Keep Coding • Keep Building
+
+**Made with ❤️ using Python**
 
 </div>

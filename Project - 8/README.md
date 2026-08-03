@@ -534,6 +534,11 @@ Steps:
 🤖 AI & Machine Learning Enthusiast
 
 ---
+### 🎥 Project Demo Video
+
+▶️(https://drive.google.com/file/d/1wOnYc54Oue9cmXYhEoJw0YjQniBEKrWg/view?usp=drive_link)
+
+---
 
 # 🙏 Acknowledgements
 
